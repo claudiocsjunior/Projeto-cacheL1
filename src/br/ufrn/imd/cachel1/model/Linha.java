@@ -10,4 +10,5 @@ public class Linha extends Valor{
     public void setBloco(Bloco bloco) {
         this.bloco = bloco;
     }
+
 }

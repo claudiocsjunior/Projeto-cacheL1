@@ -8,14 +8,14 @@ import br.ufrn.imd.cachel1.util.Configuracao;
 import br.ufrn.imd.cachel1.view.Impressao;
 
 public class MemoriaPrincipalController {
-    public void preencherMemoriaPrincipal(MemoriaPrincipal memoria, Configuracao configuracao){
+    public void preencherMemoriaPrincipal(MemoriaPrincipal memoria){
         int enderecoValor = 0;
 
-        for(int i = 0; i < configuracao.getBlocosMemoriaPrincipal(); i++){
+        for(int i = 0; i < Configuracao.BLOCOS_MEMORIA_PRINCIPAL; i++){
 //            Criar novo bloco
             Bloco bloco = new Bloco();
             bloco.setValor(i);
-            for(int j = 0; j < configuracao.getTamanhoBlocos(); j++){
+            for(int j = 0; j < Configuracao.TAMANHO_BLOCOS; j++){
 //                Criar novo endereço
                 Endereco endereco = new Endereco();
                 endereco.setValor(enderecoValor);
@@ -35,5 +35,16 @@ public class MemoriaPrincipalController {
     public void executarImpressaoMemoriaPrincipal(MemoriaPrincipal memoriaPrincipal){
         Impressao impressao = new Impressao();
         impressao.imprimirMemoriaPrincipal(memoriaPrincipal);
+    }
+
+    public Bloco buscarBlocoNaMemoria(MemoriaPrincipal memoriaPrincipal, int valorEndereco){
+        for (Bloco bloco : memoriaPrincipal.getBlocos()) {
+            if(bloco.existeEndereco(valorEndereco)){
+                return bloco;
+            }
+        }
+
+        return new Bloco();
+
     }
 }

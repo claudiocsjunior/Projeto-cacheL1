@@ -2,8 +2,9 @@ package br.ufrn.imd.cachel1.controller;
 
 import br.ufrn.imd.cachel1.enumerator.BuscaCacheEnum;
 import br.ufrn.imd.cachel1.enumerator.InstrucaoEnum;
-import br.ufrn.imd.cachel1.model.Cache;
-import br.ufrn.imd.cachel1.model.Memorias;
+import br.ufrn.imd.cachel1.enumerator.MapeamentoEnum;
+import br.ufrn.imd.cachel1.model.*;
+import br.ufrn.imd.cachel1.util.Configuracao;
 import br.ufrn.imd.cachel1.view.Impressao;
 
 import java.util.List;
@@ -60,10 +61,36 @@ public class InstrucaoController {
         Impressao impressao = new Impressao();
 
         if(resultadoBusca.get(0) == BuscaCacheEnum.HIT){
+            Hit hit = new Hit();
+            hit.setInstrucao(instrucaoArray[0]);
+            hit.setParametroInstrucao1(Integer.parseInt(instrucaoArray[1]));
+            hit.setLinha(resultadoBusca.get(1));
+
+            memorias.getMemoriaCache().getLinhaPorParametro(hit.getLinha()).getBloco().setUso(memorias.getMemoriaCache().getLinhaPorParametro(hit.getLinha()).getBloco().getValor() + 1);
+
 //            Executa HIT
-            impressao.imprimirReadHit(instrucaoArray, resultadoBusca.get(1));
+            impressao.imprimirReadHit(hit);
         }else{
 //            Executa MISS de acordo com o mapeamento
+            Miss miss = new Miss();
+
+//        Buscar bloco que contem o endereco
+            Bloco blocoMemoriaPrincipal = controladorMemoriaPrincipal.buscarBlocoNaMemoria(memorias.getMemoriaPrincipal(), Integer.parseInt(instrucaoArray[1]));
+            blocoMemoriaPrincipal.setUso(blocoMemoriaPrincipal.getUso()+1);
+
+//            Verificar mapeamento da configuração
+            if(Configuracao.MAPEAMENTO == MapeamentoEnum.MAPEAMENTO_DIRETO){
+                miss = controladorCache.executarTrocaMapeamentoDireto(memorias, Integer.parseInt(instrucaoArray[1]), blocoMemoriaPrincipal);
+            }else if(Configuracao.MAPEAMENTO == MapeamentoEnum.PARCIALMENTE_ASSOCIATIVO){
+                miss = controladorCache.executarTrocaMapeamentoParcialmenteAssociativo(memorias, Integer.parseInt(instrucaoArray[1]), blocoMemoriaPrincipal);
+            }else if(Configuracao.MAPEAMENTO == MapeamentoEnum.TOTALMENTE_ASSOCIATIVO){
+
+            }
+
+            miss.setInstrucao(instrucaoArray[0]);
+            miss.setParametroInstrucao1(Integer.parseInt(instrucaoArray[1]));
+            miss.setLinha(resultadoBusca.get(1));
+            impressao.imprimirReadMiss(miss);
         }
 
     }

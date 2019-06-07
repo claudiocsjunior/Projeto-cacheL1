@@ -20,10 +20,10 @@ public class main {
         * */
 
 //        Aplicando configuração de teste - Buscar pelo arquivo csv de configuração
-        Configuracao configuracaoTeste = new Configuracao(4, 8, 16, 1, 2, 3);
+         Configuracao.aplicarConfiguracao(4, 8, 16, 1, 2, 3);
 
 //        Criando mamórias com base nas configurações recebidas no objeto acima
-        Memorias memorias = new Memorias(configuracaoTeste);
+         Memorias memorias = new Memorias();
 
 //        Entrada de parametros
             EntradaParametros entradaParametros = new EntradaParametros();

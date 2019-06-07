@@ -7,15 +7,13 @@ import br.ufrn.imd.cachel1.util.Configuracao;
 public class Memorias {
     private MemoriaPrincipal memoriaPrincipal;
     private Cache memoriaCache;
-    private Configuracao configuracao;
 
-    public Memorias(Configuracao configuracao){
+    public Memorias(){
 //        Criando memória principal
         memoriaPrincipal = new MemoriaPrincipal();
 //        Criando memória cache
         memoriaCache = new Cache();
-//        Recebendo configuração para criação das memórias
-        this.configuracao = configuracao;
+
         this.aplicarConfiguracoesNasMemorias();
     }
 
@@ -24,13 +22,13 @@ public class Memorias {
         MemoriaPrincipalController controladorMemoria = new MemoriaPrincipalController();
 
 //        Preencher memória principal
-        controladorMemoria.preencherMemoriaPrincipal(memoriaPrincipal, this.configuracao);
+        controladorMemoria.preencherMemoriaPrincipal(memoriaPrincipal);
 
 //        Criar controlador de cache
         CacheController controladorCache = new CacheController();
 
 //        Preencher memória de Cache com valores vazios
-        controladorCache.preencherMemoriaCache(memoriaCache, this.configuracao);
+        controladorCache.preencherMemoriaCache(memoriaCache);
     }
 
     public MemoriaPrincipal getMemoriaPrincipal() {

@@ -17,4 +17,23 @@ public class Cache {
     public void setLinhas(List<Linha> linhas) {
         this.linhas = linhas;
     }
+
+    public int buscarValorLinhaVazia(){
+        for (Linha linha : this.linhas) {
+            if(linha.getBloco().getValor() == -1){
+                return linha.getValor();
+            }
+        }
+
+        return -1;
+    }
+
+    public Linha getLinhaPorParametro(int linhaValor){
+        for (Linha linha : this.linhas) {
+            if(linha.getValor() == linhaValor)
+                return  linha;
+        }
+
+        return new Linha();
+    }
 }

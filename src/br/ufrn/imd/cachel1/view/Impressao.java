@@ -7,7 +7,8 @@ import java.util.concurrent.BlockingDeque;
 public class Impressao {
     public void imprimirMemoriaCache(Cache memoriaCache){
         System.out.println("_________________________________");
-        System.out.println("Cache L1");
+        System.out.println("Cache L1 ");
+        System.out.println("Observação: -1 indica ausencia de valor - valor vazio ");
         System.out.println("Linha    |   Bloco   |   Endereço   |     Conteúdo");
         for (Linha linha : memoriaCache.getLinhas()) {
             for(Endereco endereco : linha.getBloco().getEnderecos()){
@@ -37,7 +38,15 @@ public class Impressao {
         }
     }
 
-    public void imprimirReadHit(String[] instrucaoArray, int linha){
-        System.out.println(instrucaoArray[0] +" "+ instrucaoArray[1] +" -> HIT linha "+ linha);
+    public void imprimirReadHit(Hit hit){
+        System.out.println(hit.getInstrucao() +" "+ hit.getParametroInstrucao1() +" -> HIT linha "+ hit.getLinha());
+    }
+
+    public void imprimirReadMiss(Miss miss){
+        System.out.print(miss.getInstrucao() + " ");
+        System.out.print(miss.getParametroInstrucao1() + " -> MISS -> alocado na linha ");
+        System.out.print(miss.getLinhaDeSubstituicao().getValor() + " -> Bloco ");
+        System.out.println(miss.getBlocoSubstituido().getValor() + " Substituido");
+
     }
 }
