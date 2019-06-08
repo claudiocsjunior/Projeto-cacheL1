@@ -29,6 +29,10 @@ public class Memorias {
 
 //        Preencher memória de Cache com valores vazios
         controladorCache.preencherMemoriaCache(memoriaCache);
+
+//        Inserir conjunto nas linhas as quais elas pertencem
+        controladorCache.inserirConjuntosNasLinhas(memoriaCache);
+
     }
 
     public MemoriaPrincipal getMemoriaPrincipal() {

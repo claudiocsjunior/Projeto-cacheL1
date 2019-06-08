@@ -46,6 +46,23 @@ public class CacheController {
         }
     }
 
+    public void inserirConjuntosNasLinhas(Cache memoriaCache){
+        int i = 0;
+        int j = 0;
+        int posicaoLinha = 0;
+        while (i < (Configuracao.NUMERO_CONJUNTOS+1)){
+            while(j < (Configuracao.LINHAS_CACHE / Configuracao.NUMERO_CONJUNTOS)){
+                if(memoriaCache.getLinhas().get(posicaoLinha) != null){
+                    memoriaCache.getLinhas().get(posicaoLinha).setConjuntoPertencente(i);
+                }
+                posicaoLinha++;
+                j++;
+            }
+            i++;
+            j = 0;
+        }
+    }
+
     public void executarImpressaoCache(Cache memoriaCache){
         impressao.imprimirMemoriaCache(memoriaCache);
     }
@@ -107,6 +124,22 @@ public class CacheController {
         }
 
         return miss;
+    }
+
+    public Miss executarTrocaMapeamentoTotalmenteAssociativo(Memorias memorias, int valorEndereco, Bloco blocoMemoriaPrincipal){
+//        Verificar se há alguma linha vazia - caso haja - preenche-la
+//        Caso contrário, adicionar a partir do método de substituicao
+
+        int valorBuscaLinha = memorias.getMemoriaCache().buscarValorLinhaVazia();
+
+//        Se for == -1 é porque não existem espaços vazios
+        if(valorBuscaLinha == -1){
+            PoliticasSubstituicao politicasSubstituicao = new PoliticasSubstituicao();
+            valorBuscaLinha = politicasSubstituicao.buscarLinhaPorPoliticaDeSubstituicao(memorias.getMemoriaCache());
+        }
+
+        return this.executarSubstituicaoBlocoMiss(valorBuscaLinha, new Miss(), memorias, blocoMemoriaPrincipal);
+
     }
 
     public Miss executarTrocaMapeamentoParcialmenteAssociativo(Memorias memorias, int valorEndereco, Bloco blocoMemoriaPrincipal){

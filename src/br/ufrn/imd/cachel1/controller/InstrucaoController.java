@@ -8,8 +8,6 @@ import br.ufrn.imd.cachel1.util.Configuracao;
 import br.ufrn.imd.cachel1.view.Impressao;
 
 import java.util.List;
-import java.util.Map;
-import java.util.regex.Pattern;
 
 public class InstrucaoController {
     private CacheController controladorCache;
@@ -60,13 +58,15 @@ public class InstrucaoController {
 
         Impressao impressao = new Impressao();
 
+        int blocoNovoValorUso = 0;
         if(resultadoBusca.get(0) == BuscaCacheEnum.HIT){
             Hit hit = new Hit();
             hit.setInstrucao(instrucaoArray[0]);
             hit.setParametroInstrucao1(Integer.parseInt(instrucaoArray[1]));
             hit.setLinha(resultadoBusca.get(1));
 
-            memorias.getMemoriaCache().getLinhaPorParametro(hit.getLinha()).getBloco().setUso(memorias.getMemoriaCache().getLinhaPorParametro(hit.getLinha()).getBloco().getValor() + 1);
+            blocoNovoValorUso = memorias.getMemoriaCache().getLinhaPorParametro(hit.getLinha()).getBloco().getUso() + 1;
+            memorias.getMemoriaCache().getLinhaPorParametro(hit.getLinha()).getBloco().setUso(blocoNovoValorUso);
 
 //            Executa HIT
             impressao.imprimirReadHit(hit);
@@ -76,20 +76,23 @@ public class InstrucaoController {
 
 //        Buscar bloco que contem o endereco
             Bloco blocoMemoriaPrincipal = controladorMemoriaPrincipal.buscarBlocoNaMemoria(memorias.getMemoriaPrincipal(), Integer.parseInt(instrucaoArray[1]));
-            blocoMemoriaPrincipal.setUso(blocoMemoriaPrincipal.getUso()+1);
+            blocoNovoValorUso = blocoMemoriaPrincipal.getUso()+1;
+            blocoMemoriaPrincipal.setUso(blocoNovoValorUso);
 
 //            Verificar mapeamento da configuração
             if(Configuracao.MAPEAMENTO == MapeamentoEnum.MAPEAMENTO_DIRETO){
                 miss = controladorCache.executarTrocaMapeamentoDireto(memorias, Integer.parseInt(instrucaoArray[1]), blocoMemoriaPrincipal);
+            }else if(Configuracao.MAPEAMENTO == MapeamentoEnum.TOTALMENTE_ASSOCIATIVO){
+                miss = controladorCache.executarTrocaMapeamentoTotalmenteAssociativo(memorias, Integer.parseInt(instrucaoArray[1]), blocoMemoriaPrincipal);
             }else if(Configuracao.MAPEAMENTO == MapeamentoEnum.PARCIALMENTE_ASSOCIATIVO){
                 miss = controladorCache.executarTrocaMapeamentoParcialmenteAssociativo(memorias, Integer.parseInt(instrucaoArray[1]), blocoMemoriaPrincipal);
-            }else if(Configuracao.MAPEAMENTO == MapeamentoEnum.TOTALMENTE_ASSOCIATIVO){
-
             }
+
+//            Adiciona no final da lista de ordenação o valor do bloco que irá substituir o outro
+            memorias.getMemoriaCache().getOrdenarBlocosPorUso().add(blocoMemoriaPrincipal.getValor());
 
             miss.setInstrucao(instrucaoArray[0]);
             miss.setParametroInstrucao1(Integer.parseInt(instrucaoArray[1]));
-            miss.setLinha(resultadoBusca.get(1));
             impressao.imprimirReadMiss(miss);
         }
 

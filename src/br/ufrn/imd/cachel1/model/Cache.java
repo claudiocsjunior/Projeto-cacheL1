@@ -5,9 +5,11 @@ import java.util.List;
 
 public class Cache {
     private List<Linha> linhas;
+    private List<Integer> ordenarBlocosPorUso;
 
     public Cache(){
         linhas = new ArrayList<Linha>();
+        ordenarBlocosPorUso = new ArrayList<Integer>();
     }
 
     public List<Linha> getLinhas() {
@@ -16,6 +18,15 @@ public class Cache {
 
     public void setLinhas(List<Linha> linhas) {
         this.linhas = linhas;
+    }
+
+
+    public List<Integer> getOrdenarBlocosPorUso() {
+        return ordenarBlocosPorUso;
+    }
+
+    public void setOrdenarBlocosPorUso(List<Integer> ordenarBlocosPorUso) {
+        this.ordenarBlocosPorUso = ordenarBlocosPorUso;
     }
 
     public int buscarValorLinhaVazia(){

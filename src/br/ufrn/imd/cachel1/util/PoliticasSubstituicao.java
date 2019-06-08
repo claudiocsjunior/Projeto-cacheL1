@@ -3,6 +3,7 @@ package br.ufrn.imd.cachel1.util;
 import br.ufrn.imd.cachel1.enumerator.PoliticasSubstituicaoEnum;
 import br.ufrn.imd.cachel1.model.Cache;
 import br.ufrn.imd.cachel1.model.Linha;
+import br.ufrn.imd.cachel1.model.Memorias;
 
 import java.util.Random;
 
@@ -16,6 +17,7 @@ public class PoliticasSubstituicao {
             return LFU(memoriaCache);
         }else if(Configuracao.POLITICAS_SUBSTITUICAO == PoliticasSubstituicaoEnum.FIFO){
 //            Executa a politica FIFO
+            return FIFO(memoriaCache);
         }
 
         return 0;
@@ -27,19 +29,35 @@ public class PoliticasSubstituicao {
     }
 
     private int LFU(Cache memoriaCache){
-        int linhaBlocoMenosUsado = -1;
+        boolean contemLinha = false;
+        Linha linhaBlocoMenosUsado = new Linha();
 
         for (Linha linha : memoriaCache.getLinhas()) {
-            if(linhaBlocoMenosUsado == -1){
-                linhaBlocoMenosUsado = linha.getBloco().getUso();
+            if(!contemLinha){
+                linhaBlocoMenosUsado = linha;
+                contemLinha = true;
             }else{
-                if(linha.getBloco().getUso() < linhaBlocoMenosUsado){
-                    linhaBlocoMenosUsado = linha.getBloco().getUso();
+                if(linha.getBloco().getUso() < linhaBlocoMenosUsado.getBloco().getUso()){
+                    linhaBlocoMenosUsado = linha;
                 }
             }
         }
+        return linhaBlocoMenosUsado.getValor();
+    }
 
-        return linhaBlocoMenosUsado;
+    private int FIFO(Cache memoriaCache){
+//        Busca o primeiro da lista
+        int blocoSaida = memoriaCache.getOrdenarBlocosPorUso().get(0);
+        for (Linha linha : memoriaCache.getLinhas()) {
+            if(linha.getBloco().getValor() == blocoSaida){
+//                Retirar o bloco da lista de valores ordenados
+                memoriaCache.getOrdenarBlocosPorUso().remove(0);
+
+                return linha.getValor();
+            }
+        }
+
+        return 0;
     }
 
 }

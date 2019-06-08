@@ -9,7 +9,7 @@ public class Impressao {
         System.out.println("_________________________________");
         System.out.println("Cache L1 ");
         System.out.println("Observação: -1 indica ausencia de valor - valor vazio ");
-        System.out.println("Linha    |   Bloco   |   Endereço   |     Conteúdo");
+        System.out.println("Linha    |   Bloco   |   Endereço   |     Conteúdo |     Uso");
         for (Linha linha : memoriaCache.getLinhas()) {
             for(Endereco endereco : linha.getBloco().getEnderecos()){
                 System.out.print(linha.getValor());
@@ -18,7 +18,10 @@ public class Impressao {
                 System.out.print("     |       ");
                 System.out.print(endereco.getValor());
                 System.out.print("       |       ");
-                System.out.println(endereco.getConteudo());
+                System.out.print(endereco.getConteudo());
+                //TODO retirar - só para mostar o uso do bloco
+                System.out.print("       |       ");
+                System.out.println(linha.getBloco().getUso());
             }
         }
     }
