@@ -52,7 +52,7 @@ public class CacheController {
         int posicaoLinha = 0;
         while (i < (Configuracao.NUMERO_CONJUNTOS+1)){
             while(j < (Configuracao.LINHAS_CACHE / Configuracao.NUMERO_CONJUNTOS)){
-                if(memoriaCache.getLinhas().get(posicaoLinha) != null){
+                if(posicaoLinha < memoriaCache.getLinhas().size()){
                     memoriaCache.getLinhas().get(posicaoLinha).setConjuntoPertencente(i);
                 }
                 posicaoLinha++;

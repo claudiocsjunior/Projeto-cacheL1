@@ -7,20 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17638e99-7923-4386-9a0e-d4b2e7bce8ff" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/CacheController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/CacheController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/InstrucaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/InstrucaoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/util/PoliticasSubstituicao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/util/PoliticasSubstituicao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/view/Impressao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/view/Impressao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/view/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/CacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/CacheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/InstrucaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/InstrucaoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Cache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Linha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Linha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Memorias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Memorias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/util/PoliticasSubstituicao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/util/PoliticasSubstituicao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="32">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Memorias.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="52">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/CacheController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+            <state relative-caret-position="119">
+              <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#preencherMemoriaCache#0;class#CacheController#0" />
@@ -278,7 +265,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559969293851" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559969751244" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -333,12 +320,12 @@
       <workItem from="1559789125464" duration="6509000" />
       <workItem from="1559862055609" duration="5824000" />
       <workItem from="1559873770459" duration="7863000" />
-      <workItem from="1559959745965" duration="9203000" />
+      <workItem from="1559959745965" duration="9656000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48313000" />
+    <option name="totallyTimeSpent" value="48766000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -353,7 +340,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23903178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23903178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -363,7 +350,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4599018" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3927987" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36006546" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
@@ -425,6 +412,18 @@
           <line>49</line>
           <properties />
           <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -658,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="32">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -668,8 +667,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Memorias.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="52">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -678,8 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/CacheController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        <state relative-caret-position="119">
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#preencherMemoriaCache#0;class#CacheController#0" />
