@@ -37,4 +37,14 @@ public class Bloco extends Valor{
     public void setUso(int uso) {
         this.uso = uso;
     }
+
+    public Endereco getEnderecoPorParametro(int valorEndereco){
+        for (Endereco endereco : this.enderecos) {
+            if(endereco.getValor() == valorEndereco){
+                return endereco;
+            }
+        }
+
+        return new Endereco();
+    }
 }

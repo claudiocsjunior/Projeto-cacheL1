@@ -135,7 +135,7 @@ public class CacheController {
 //        Se for == -1 é porque não existem espaços vazios
         if(valorBuscaLinha == -1){
             PoliticasSubstituicao politicasSubstituicao = new PoliticasSubstituicao();
-            valorBuscaLinha = politicasSubstituicao.buscarLinhaPorPoliticaDeSubstituicao(memorias.getMemoriaCache());
+            valorBuscaLinha = politicasSubstituicao.buscarLinhaPorPoliticaDeSubstituicao(memorias.getMemoriaCache(), -1);
         }
 
         return this.executarSubstituicaoBlocoMiss(valorBuscaLinha, new Miss(), memorias, blocoMemoriaPrincipal);
@@ -143,15 +143,13 @@ public class CacheController {
     }
 
     public Miss executarTrocaMapeamentoParcialmenteAssociativo(Memorias memorias, int valorEndereco, Bloco blocoMemoriaPrincipal){
-//        Verificar se há alguma linha vazia - caso haja - preenche-la
-//        Caso contrário, adicionar a partir do método de substituicao
-
-        int valorBuscaLinha = memorias.getMemoriaCache().buscarValorLinhaVazia();
+        int conjuntoAssociado = (blocoMemoriaPrincipal.getValor() % Configuracao.NUMERO_CONJUNTOS);
+        int valorBuscaLinha = memorias.getMemoriaCache().buscarValorLinhaVaziaPorConjunto(conjuntoAssociado);
 
 //        Se for == -1 é porque não existem espaços vazios
         if(valorBuscaLinha == -1){
             PoliticasSubstituicao politicasSubstituicao = new PoliticasSubstituicao();
-            valorBuscaLinha = politicasSubstituicao.buscarLinhaPorPoliticaDeSubstituicao(memorias.getMemoriaCache());
+            valorBuscaLinha = politicasSubstituicao.buscarLinhaPorPoliticaDeSubstituicao(memorias.getMemoriaCache(), conjuntoAssociado);
         }
 
         return this.executarSubstituicaoBlocoMiss(valorBuscaLinha, new Miss(), memorias, blocoMemoriaPrincipal);

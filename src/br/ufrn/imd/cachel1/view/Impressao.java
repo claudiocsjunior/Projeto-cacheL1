@@ -9,7 +9,7 @@ public class Impressao {
         System.out.println("_________________________________");
         System.out.println("Cache L1 ");
         System.out.println("Observação: -1 indica ausencia de valor - valor vazio ");
-        System.out.println("Linha    |   Bloco   |   Endereço   |     Conteúdo |     Uso");
+        System.out.println("Linha    |   Bloco   |   Endereço   |     Conteúdo");
         for (Linha linha : memoriaCache.getLinhas()) {
             for(Endereco endereco : linha.getBloco().getEnderecos()){
                 System.out.print(linha.getValor());
@@ -18,10 +18,10 @@ public class Impressao {
                 System.out.print("     |       ");
                 System.out.print(endereco.getValor());
                 System.out.print("       |       ");
-                System.out.print(endereco.getConteudo());
-                //TODO retirar - só para mostar o uso do bloco
-                System.out.print("       |       ");
-                System.out.println(linha.getBloco().getUso());
+                System.out.println(endereco.getConteudo());
+//                //TODO retirar - só para mostar o uso do bloco
+//                System.out.print("       |       ");
+//                System.out.println(linha.getBloco().getUso());
             }
         }
     }
@@ -52,4 +52,21 @@ public class Impressao {
         System.out.println(miss.getBlocoSubstituido().getValor() + " Substituido");
 
     }
+
+    public void imprimirWriteHit(Hit hit){
+        System.out.print(hit.getInstrucao() +" ");
+        System.out.print(hit.getParametroInstrucao1() +" -> HIT linha "+ hit.getLinha());
+        System.out.print(" -> Novo do valor de endereço ");
+        System.out.println(hit.getParametroInstrucao1() +" - "+ hit.getParametroInstrucao2());
+    }
+
+    public void imprimirWriteMiss(Miss miss){
+        System.out.print(miss.getInstrucao() + " ");
+        System.out.print(miss.getParametroInstrucao1() + " -> MISS -> alocado na linha ");
+        System.out.print(miss.getLinhaDeSubstituicao().getValor() + " -> Bloco ");
+        System.out.print(miss.getBlocoSubstituido().getValor() + " Substituido");
+        System.out.print(" -> Novo do valor de endereço ");
+        System.out.println(miss.getParametroInstrucao1() +" - "+ miss.getParametroInstrucao2());
+    }
+
 }

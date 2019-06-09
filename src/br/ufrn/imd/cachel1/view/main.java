@@ -1,5 +1,6 @@
 package br.ufrn.imd.cachel1.view;
 
+import br.ufrn.imd.cachel1.controller.ConfiguracaoController;
 import br.ufrn.imd.cachel1.controller.MemoriaPrincipalController;
 import br.ufrn.imd.cachel1.model.Cache;
 import br.ufrn.imd.cachel1.model.MemoriaPrincipal;
@@ -19,8 +20,12 @@ public class main {
         *
         * */
 
+//        Aplica configurações a partir do arquivo de configuração
+        ConfiguracaoController configuracaoController = new ConfiguracaoController();
+        configuracaoController.aplicarConfiguracoes();
+
 //        Aplicando configuração de teste - Buscar pelo arquivo csv de configuração
-         Configuracao.aplicarConfiguracao(4, 9, 16, 2, 4, 2);
+//         Configuracao.aplicarConfiguracao(4, 8, 16, 1, 4, 2);
 
 //        Criando mamórias com base nas configurações recebidas no objeto acima
          Memorias memorias = new Memorias();

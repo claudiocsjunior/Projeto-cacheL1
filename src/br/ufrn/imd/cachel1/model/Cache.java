@@ -47,4 +47,26 @@ public class Cache {
 
         return new Linha();
     }
+
+    public int buscarValorLinhaVaziaPorConjunto(int conjunto){
+        for (Linha linha : this.linhas) {
+            if(linha.getBloco().getValor() == -1 && linha.getConjuntoPertencente() == conjunto){
+                return linha.getValor();
+            }
+        }
+
+        return -1;
+    }
+
+    public List<Linha> buscarLinhasPorConjunto(int conjunto){
+        List<Linha> linhas = new ArrayList<Linha>();
+
+        for (Linha linha : this.getLinhas()) {
+            if(linha.getConjuntoPertencente() == conjunto){
+                linhas.add(linha);
+            }
+        }
+
+        return linhas;
+    }
 }
