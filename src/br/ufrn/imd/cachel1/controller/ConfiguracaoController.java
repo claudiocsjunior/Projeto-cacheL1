@@ -10,7 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ConfiguracaoController {
-    private static String ARQUIVO = "config/config.txt";
+//    Caminha produção
+    private static String ARQUIVO = "../../../config/config.txt";
+//    Caminho local
+//    private static String ARQUIVO = "config/config.txt";
 
     public List<Integer> lerArquivo(){
         try {

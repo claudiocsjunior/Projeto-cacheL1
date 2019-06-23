@@ -7,26 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17638e99-7923-4386-9a0e-d4b2e7bce8ff" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/config.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/enumerator/ConfiguracaoEnum.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/CacheController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/CacheController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/InstrucaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/InstrucaoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/model/Bloco.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/model/Bloco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/model/Cache.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/model/Cache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/util/PoliticasSubstituicao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/util/PoliticasSubstituicao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/view/Impressao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/view/Impressao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/view/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/view/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/CacheController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/CacheController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/InstrucaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/InstrucaoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Bloco.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Bloco.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Cache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Cache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/util/Configuracao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/util/Configuracao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/util/PoliticasSubstituicao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/util/PoliticasSubstituicao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/ConfiguracaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/ConfiguracaoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,36 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java">
+        <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+            <state relative-caret-position="209">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#525#534#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/enumerator/ConfiguracaoEnum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -81,10 +43,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java">
+        <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/EntradaParametros.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
+            <state relative-caret-position="190">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,7 +105,6 @@
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/CacheController.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/util/PoliticasSubstituicao.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Bloco.java" />
-        <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/InstrucaoController.java" />
         <option value="$PROJECT_DIR$/config/config.csv" />
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/enumerator/ConfiguracaoEnum.java" />
@@ -139,6 +112,7 @@
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/util/Configuracao.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java" />
+        <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java" />
       </list>
     </option>
   </component>
@@ -155,6 +129,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -166,6 +141,24 @@
               <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="Projeto_Arquitetura_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
@@ -197,6 +190,13 @@
               <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="cachel1" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="cachel1" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,13 +210,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560042502871" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560297867700" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -273,12 +272,15 @@
       <workItem from="1559873770459" duration="7863000" />
       <workItem from="1559959745965" duration="9778000" />
       <workItem from="1560015520993" duration="6345000" />
-      <workItem from="1560033567506" duration="7966000" />
+      <workItem from="1560033567506" duration="9422000" />
+      <workItem from="1560297385987" duration="163000" />
+      <workItem from="1560297796650" duration="159000" />
+      <workItem from="1561294963213" duration="1697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63199000" />
+    <option name="totallyTimeSpent" value="66674000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -293,7 +295,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24659607" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -302,8 +304,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.06546645" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.19639935" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.05728314" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.07528642" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
@@ -392,7 +394,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java</url>
-          <line>16</line>
+          <line>19</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
@@ -489,13 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/enumerator/InstrucaoEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/MemoriaPrincipal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -536,20 +531,6 @@
           <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Cache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="method#setOrdenarBlocosPorUso#0;class#Cache#0" />
-            <element signature="method#buscarValorLinhaVazia#0;class#Cache#0" />
           </folding>
         </state>
       </provider>
@@ -609,12 +590,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/EntradaParametros.java">
+    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/enumerator/ConfiguracaoEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+        <state relative-caret-position="190">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/model/Cache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="method#setOrdenarBlocosPorUso#0;class#Cache#0" />
+            <element signature="method#buscarValorLinhaVazia#0;class#Cache#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/enumerator/InstrucaoEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/InstrucaoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#executarInstrucaoRead#0;class#InstrucaoController#0" />
           </folding>
         </state>
       </provider>
@@ -626,21 +636,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/InstrucaoController.java">
+    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-949">
-          <caret line="48" column="41" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+        <state relative-caret-position="400">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#executarInstrucaoRead#0;class#InstrucaoController#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/enumerator/ConfiguracaoEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -651,33 +653,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+        <state relative-caret-position="133">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#525#534#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/EntradaParametros.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
