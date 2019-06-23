@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="17638e99-7923-4386-9a0e-d4b2e7bce8ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/execucao_projeto.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/ConfiguracaoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Projeto Arquitetura/br/ufrn/imd/cachel1/controller/ConfiguracaoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="209">
@@ -29,6 +27,15 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/execucao_projeto.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -113,6 +120,7 @@
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/main.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/controller/ConfiguracaoController.java" />
         <option value="$PROJECT_DIR$/src/br/ufrn/imd/cachel1/view/Impressao.java" />
+        <option value="$PROJECT_DIR$/execucao_projeto.txt" />
       </list>
     </option>
   </component>
@@ -160,52 +168,6 @@
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
               <item name="Projeto_Arquitetura_jar" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cachel1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cachel1" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cachel1" type="462c0819:PsiDirectoryNode" />
-              <item name="enumerator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cachel1" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cachel1" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projeto Arquitetura" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto Arquitetura" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="cachel1" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -215,7 +177,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560297867700" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561297422063" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -275,12 +237,12 @@
       <workItem from="1560033567506" duration="9422000" />
       <workItem from="1560297385987" duration="163000" />
       <workItem from="1560297796650" duration="159000" />
-      <workItem from="1561294963213" duration="1697000" />
+      <workItem from="1561294963213" duration="2440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66674000" />
+    <option name="totallyTimeSpent" value="67417000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -295,7 +257,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2579425" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -304,7 +266,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.05728314" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.05728314" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.07528642" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -680,6 +642,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/execucao_projeto.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
         </state>
       </provider>
     </entry>

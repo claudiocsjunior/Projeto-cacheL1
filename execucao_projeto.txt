@@ -1,0 +1,14 @@
+O arquivo de configuração se encontra no caminho: config/config.txt
+
+Parametros:
+1 - Tamanho do bloco (em número de palavras)
+2 - Numero de linhas da cache
+3 - Numero de blocos da memória principal
+4 - Mapeamento (1 – Direto; 2 – Totalmente Associativo; 3 – Parcialmente Associativo)
+5 - Numero de conjuntos (caso não seja Parcialmente Associativo, ler o valor normalmente mas desconsidere-o)
+6 - Política de substituição (1 – Aleatório; 2 – FIFO; 3 – LFU)
+
+Para a execução é necessário entra no caminho out\artifacts\Projeto_Arquitetura_jar\
+e executar o comando java -jar "Projeto Arquitetura.jar"
+
+OBS.: É necessário ter o java instalado na máquina
